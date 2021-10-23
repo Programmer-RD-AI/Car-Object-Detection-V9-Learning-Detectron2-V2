@@ -1,0 +1,154 @@
+2021-10-23 19:03:32,138 INFO    MainThread:146971 [internal.py:wandb_internal():86] W&B internal server running at pid: 146971, started at: 2021-10-23 19:03:32.138209
+2021-10-23 19:03:32,139 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: check_version
+2021-10-23 19:03:32,140 DEBUG   SenderThread:146971 [sender.py:send():185] send: header
+2021-10-23 19:03:32,141 INFO    WriterThread:146971 [datastore.py:open_for_write():77] open: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/run-1bjlxj6v.wandb
+2021-10-23 19:03:32,141 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: check_version
+2021-10-23 19:03:32,506 DEBUG   SenderThread:146971 [sender.py:send():185] send: run
+2021-10-23 19:03:32,510 DEBUG   SenderThread:146971 [git.py:repo():33] git repository is invalid
+2021-10-23 19:03:33,025 INFO    SenderThread:146971 [dir_watcher.py:__init__():169] watching files in: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files
+2021-10-23 19:03:33,025 INFO    SenderThread:146971 [sender.py:_start_run_threads():746] run started: 1bjlxj6v with start time 1634996011
+2021-10-23 19:03:33,025 DEBUG   SenderThread:146971 [sender.py:send():185] send: summary
+2021-10-23 19:03:33,026 INFO    SenderThread:146971 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-23 19:03:33,027 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: run_start
+2021-10-23 19:03:34,027 INFO    Thread-8  :146971 [dir_watcher.py:_on_file_created():217] file/dir created: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/wandb-summary.json
+2021-10-23 19:03:34,821 DEBUG   HandlerThread:146971 [meta.py:__init__():40] meta init
+2021-10-23 19:03:34,821 DEBUG   HandlerThread:146971 [meta.py:__init__():54] meta init done
+2021-10-23 19:03:34,821 DEBUG   HandlerThread:146971 [meta.py:probe():211] probe
+2021-10-23 19:03:34,834 DEBUG   HandlerThread:146971 [git.py:repo():33] git repository is invalid
+2021-10-23 19:03:34,834 DEBUG   HandlerThread:146971 [meta.py:_save_code():90] save code
+2021-10-23 19:03:34,834 WARNING HandlerThread:146971 [meta.py:_save_code():92] unable to save code -- program entry not found
+2021-10-23 19:03:34,834 DEBUG   HandlerThread:146971 [meta.py:_save_pip():58] save pip
+2021-10-23 19:03:34,835 DEBUG   HandlerThread:146971 [meta.py:_save_pip():72] save pip done
+2021-10-23 19:03:34,835 DEBUG   HandlerThread:146971 [meta.py:_save_conda():79] save conda
+2021-10-23 19:03:35,026 INFO    Thread-8  :146971 [dir_watcher.py:_on_file_created():217] file/dir created: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/requirements.txt
+2021-10-23 19:03:35,027 INFO    Thread-8  :146971 [dir_watcher.py:_on_file_created():217] file/dir created: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/conda-environment.yaml
+2021-10-23 19:03:39,027 INFO    Thread-8  :146971 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/conda-environment.yaml
+2021-10-23 19:03:39,027 INFO    Thread-8  :146971 [dir_watcher.py:_on_file_created():217] file/dir created: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/output.log
+2021-10-23 19:03:39,249 DEBUG   HandlerThread:146971 [meta.py:_save_conda():87] save conda done
+2021-10-23 19:03:39,249 DEBUG   HandlerThread:146971 [meta.py:probe():249] probe done
+2021-10-23 19:03:39,252 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-23 19:03:39,253 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: stop_status
+2021-10-23 19:03:39,721 DEBUG   SenderThread:146971 [sender.py:send():185] send: files
+2021-10-23 19:03:39,722 INFO    SenderThread:146971 [sender.py:_save_file():879] saving file wandb-metadata.json with policy now
+2021-10-23 19:03:40,028 INFO    Thread-8  :146971 [dir_watcher.py:_on_file_created():217] file/dir created: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/wandb-metadata.json
+2021-10-23 19:03:40,792 INFO    Thread-11 :146971 [upload_job.py:push():137] Uploaded file /tmp/tmp1ylss9t3wandb/285ekwa3-wandb-metadata.json
+2021-10-23 19:03:46,872 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: log_artifact
+2021-10-23 19:03:46,873 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: log_artifact
+2021-10-23 19:03:46,876 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: pause
+2021-10-23 19:03:46,876 INFO    HandlerThread:146971 [handler.py:handle_request_pause():567] stopping system metrics thread
+2021-10-23 19:03:47,032 INFO    Thread-8  :146971 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/output.log
+2021-10-23 19:03:49,033 INFO    Thread-8  :146971 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/output.log
+2021-10-23 19:03:50,860 INFO    Thread-13 :146971 [upload_job.py:push():95] Uploaded file /home/indika/.cache/wandb/artifacts/obj/md5/cf/6efd380ca9f4ae16e5761b985586d4
+2021-10-23 19:03:52,581 INFO    SenderThread:146971 [sender.py:send_request_log_artifact():907] logged artifact source-1bjlxj6v - {'id': 'QXJ0aWZhY3Q6MzMwOTc5OTY=', 'digest': 'e0278d84d871143d6cbd1dbf974414d8', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU1NTYxMzA=', 'latestArtifact': None}, 'version': 'latest'}
+2021-10-23 19:03:52,581 DEBUG   SenderThread:146971 [sender.py:send():185] send: stats
+2021-10-23 19:03:54,723 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-23 19:03:54,723 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: stop_status
+2021-10-23 19:03:56,538 WARNING MainThread:146971 [internal.py:wandb_internal():145] Internal process interrupt: 1
+2021-10-23 19:03:57,111 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-23 19:03:57,111 DEBUG   SenderThread:146971 [sender.py:send():185] send: telemetry
+2021-10-23 19:03:57,112 DEBUG   SenderThread:146971 [sender.py:send():185] send: exit
+2021-10-23 19:03:57,112 INFO    SenderThread:146971 [sender.py:send_exit():294] handling exit code: 0
+2021-10-23 19:03:57,112 INFO    SenderThread:146971 [sender.py:send_exit():296] handling runtime: 13
+2021-10-23 19:03:57,114 INFO    SenderThread:146971 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-23 19:03:57,114 INFO    SenderThread:146971 [sender.py:send_exit():306] send defer
+2021-10-23 19:03:57,114 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: poll_exit
+2021-10-23 19:03:57,114 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: defer
+2021-10-23 19:03:57,115 INFO    HandlerThread:146971 [handler.py:handle_request_defer():143] handle defer: 0
+2021-10-23 19:03:57,115 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: defer
+2021-10-23 19:03:57,115 INFO    SenderThread:146971 [sender.py:send_request_defer():315] handle sender defer: 0
+2021-10-23 19:03:57,115 INFO    SenderThread:146971 [sender.py:transition_state():319] send defer: 1
+2021-10-23 19:03:57,115 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: defer
+2021-10-23 19:03:57,115 INFO    HandlerThread:146971 [handler.py:handle_request_defer():143] handle defer: 1
+2021-10-23 19:03:57,115 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: defer
+2021-10-23 19:03:57,115 INFO    SenderThread:146971 [sender.py:send_request_defer():315] handle sender defer: 1
+2021-10-23 19:03:57,115 INFO    SenderThread:146971 [sender.py:transition_state():319] send defer: 2
+2021-10-23 19:03:57,116 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: defer
+2021-10-23 19:03:57,116 INFO    HandlerThread:146971 [handler.py:handle_request_defer():143] handle defer: 2
+2021-10-23 19:03:57,116 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: defer
+2021-10-23 19:03:57,116 INFO    SenderThread:146971 [sender.py:send_request_defer():315] handle sender defer: 2
+2021-10-23 19:03:57,116 INFO    SenderThread:146971 [sender.py:transition_state():319] send defer: 3
+2021-10-23 19:03:57,116 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: defer
+2021-10-23 19:03:57,116 INFO    HandlerThread:146971 [handler.py:handle_request_defer():143] handle defer: 3
+2021-10-23 19:03:57,116 DEBUG   SenderThread:146971 [sender.py:send():185] send: summary
+2021-10-23 19:03:57,117 INFO    SenderThread:146971 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-23 19:03:57,117 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: defer
+2021-10-23 19:03:57,117 INFO    SenderThread:146971 [sender.py:send_request_defer():315] handle sender defer: 3
+2021-10-23 19:03:57,117 INFO    SenderThread:146971 [sender.py:transition_state():319] send defer: 4
+2021-10-23 19:03:57,117 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: defer
+2021-10-23 19:03:57,117 INFO    HandlerThread:146971 [handler.py:handle_request_defer():143] handle defer: 4
+2021-10-23 19:03:57,117 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: defer
+2021-10-23 19:03:57,117 INFO    SenderThread:146971 [sender.py:send_request_defer():315] handle sender defer: 4
+2021-10-23 19:03:57,219 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-23 19:03:57,713 INFO    SenderThread:146971 [sender.py:transition_state():319] send defer: 5
+2021-10-23 19:03:57,714 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: poll_exit
+2021-10-23 19:03:57,714 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: defer
+2021-10-23 19:03:57,714 INFO    HandlerThread:146971 [handler.py:handle_request_defer():143] handle defer: 5
+2021-10-23 19:03:57,714 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: defer
+2021-10-23 19:03:57,714 INFO    SenderThread:146971 [sender.py:send_request_defer():315] handle sender defer: 5
+2021-10-23 19:03:57,715 INFO    SenderThread:146971 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-10-23 19:03:57,816 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-23 19:03:58,035 INFO    SenderThread:146971 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/output.log
+2021-10-23 19:03:58,035 INFO    SenderThread:146971 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/wandb-summary.json
+2021-10-23 19:03:58,036 INFO    SenderThread:146971 [dir_watcher.py:_on_file_modified():230] file/dir modified: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/config.yaml
+2021-10-23 19:03:58,036 INFO    SenderThread:146971 [dir_watcher.py:finish():313] scan: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files
+2021-10-23 19:03:58,036 INFO    SenderThread:146971 [dir_watcher.py:finish():327] scan save: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/wandb-metadata.json wandb-metadata.json
+2021-10-23 19:03:58,036 INFO    SenderThread:146971 [dir_watcher.py:finish():327] scan save: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/conda-environment.yaml conda-environment.yaml
+2021-10-23 19:03:58,036 INFO    SenderThread:146971 [dir_watcher.py:finish():327] scan save: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/output.log output.log
+2021-10-23 19:03:58,036 INFO    SenderThread:146971 [dir_watcher.py:finish():327] scan save: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/config.yaml config.yaml
+2021-10-23 19:03:58,036 INFO    SenderThread:146971 [dir_watcher.py:finish():327] scan save: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/wandb-summary.json wandb-summary.json
+2021-10-23 19:03:58,037 INFO    SenderThread:146971 [dir_watcher.py:finish():327] scan save: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/requirements.txt requirements.txt
+2021-10-23 19:03:58,037 INFO    SenderThread:146971 [sender.py:transition_state():319] send defer: 6
+2021-10-23 19:03:58,037 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: poll_exit
+2021-10-23 19:03:58,038 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: defer
+2021-10-23 19:03:58,043 INFO    HandlerThread:146971 [handler.py:handle_request_defer():143] handle defer: 6
+2021-10-23 19:03:58,046 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: defer
+2021-10-23 19:03:58,049 INFO    SenderThread:146971 [sender.py:send_request_defer():315] handle sender defer: 6
+2021-10-23 19:03:58,057 INFO    SenderThread:146971 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-23 19:03:58,139 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-23 19:03:58,139 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: poll_exit
+2021-10-23 19:03:58,242 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-23 19:03:58,242 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: poll_exit
+2021-10-23 19:03:58,344 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-23 19:03:58,344 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: poll_exit
+2021-10-23 19:03:58,446 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-23 19:03:58,446 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: poll_exit
+2021-10-23 19:03:58,548 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-23 19:03:58,549 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: poll_exit
+2021-10-23 19:03:58,651 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-23 19:03:58,651 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: poll_exit
+2021-10-23 19:03:58,753 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-23 19:03:58,753 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: poll_exit
+2021-10-23 19:03:58,856 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-23 19:03:58,856 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: poll_exit
+2021-10-23 19:03:58,959 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-23 19:03:58,959 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: poll_exit
+2021-10-23 19:03:59,277 INFO    Thread-16 :146971 [upload_job.py:push():137] Uploaded file /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/config.yaml
+2021-10-23 19:03:59,286 INFO    Thread-15 :146971 [upload_job.py:push():137] Uploaded file /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/output.log
+2021-10-23 19:03:59,295 INFO    Thread-14 :146971 [upload_job.py:push():137] Uploaded file /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/conda-environment.yaml
+2021-10-23 19:03:59,300 INFO    Thread-17 :146971 [upload_job.py:push():137] Uploaded file /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/wandb-summary.json
+2021-10-23 19:03:59,305 INFO    Thread-18 :146971 [upload_job.py:push():137] Uploaded file /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/files/requirements.txt
+2021-10-23 19:03:59,506 INFO    Thread-7  :146971 [sender.py:transition_state():319] send defer: 7
+2021-10-23 19:03:59,506 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: defer
+2021-10-23 19:03:59,506 INFO    HandlerThread:146971 [handler.py:handle_request_defer():143] handle defer: 7
+2021-10-23 19:03:59,506 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: defer
+2021-10-23 19:03:59,507 INFO    SenderThread:146971 [sender.py:send_request_defer():315] handle sender defer: 7
+2021-10-23 19:03:59,905 INFO    SenderThread:146971 [sender.py:transition_state():319] send defer: 8
+2021-10-23 19:03:59,906 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: defer
+2021-10-23 19:03:59,906 INFO    HandlerThread:146971 [handler.py:handle_request_defer():143] handle defer: 8
+2021-10-23 19:03:59,906 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: defer
+2021-10-23 19:03:59,906 INFO    SenderThread:146971 [sender.py:send_request_defer():315] handle sender defer: 8
+2021-10-23 19:03:59,906 INFO    SenderThread:146971 [sender.py:transition_state():319] send defer: 9
+2021-10-23 19:03:59,907 DEBUG   SenderThread:146971 [sender.py:send():185] send: final
+2021-10-23 19:03:59,907 DEBUG   HandlerThread:146971 [handler.py:handle_request():126] handle_request: defer
+2021-10-23 19:03:59,907 DEBUG   SenderThread:146971 [sender.py:send():185] send: footer
+2021-10-23 19:03:59,907 INFO    HandlerThread:146971 [handler.py:handle_request_defer():143] handle defer: 9
+2021-10-23 19:03:59,907 DEBUG   SenderThread:146971 [sender.py:send_request():199] send_request: defer
+2021-10-23 19:03:59,907 INFO    SenderThread:146971 [sender.py:send_request_defer():315] handle sender defer: 9
+2021-10-23 19:04:05,547 WARNING MainThread:146971 [internal.py:is_dead():364] Internal process exiting, parent pid 146151 disappeared
+2021-10-23 19:04:05,547 ERROR   MainThread:146971 [internal.py:wandb_internal():141] Internal process shutdown.
+2021-10-23 19:04:05,908 INFO    WriterThread:146971 [datastore.py:close():281] close: /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190331-1bjlxj6v/run-1bjlxj6v.wandb
+2021-10-23 19:04:05,908 INFO    SenderThread:146971 [sender.py:finish():986] shutting down sender
+2021-10-23 19:04:05,909 INFO    SenderThread:146971 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-23 19:04:05,909 INFO    SenderThread:146971 [file_pusher.py:join():182] waiting for file pusher
+2021-10-23 19:04:05,912 INFO    HandlerThread:146971 [handler.py:finish():683] shutting down handler
+2021-10-23 19:04:05,915 INFO    MainThread:146971 [internal.py:handle_exit():76] Internal process exited

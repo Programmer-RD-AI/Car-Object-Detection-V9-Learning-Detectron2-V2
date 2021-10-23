@@ -1,0 +1,48 @@
+2021-10-23 19:02:40,879 INFO    MainThread:116186 [wandb_setup.py:_flush():69] setting env: {}
+2021-10-23 19:02:40,880 INFO    MainThread:116186 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-10-23 19:02:40,880 INFO    MainThread:116186 [wandb_init.py:_log_setup():357] Logging user logs to /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190240-3btc5e5q/logs/debug.log
+2021-10-23 19:02:40,880 INFO    MainThread:116186 [wandb_init.py:_log_setup():358] Logging internal logs to /media/indika/Sync/Programming/Projects/Python/Artifical-Intelligence/Detectron2/Car-Object-Detection-V9-Learning-Detectron2-V2/wandb/run-20211023_190240-3btc5e5q/logs/debug-internal.log
+2021-10-23 19:02:40,880 INFO    MainThread:116186 [wandb_init.py:_jupyter_setup():307] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7ff55132a1f0>
+2021-10-23 19:02:40,880 INFO    MainThread:116186 [wandb_init.py:init():390] calling init triggers
+2021-10-23 19:02:40,880 INFO    MainThread:116186 [wandb_init.py:init():395] wandb.init called with sweep_config: {}
+config: {}
+2021-10-23 19:02:40,880 INFO    MainThread:116186 [wandb_init.py:init():435] starting backend
+2021-10-23 19:02:40,880 INFO    MainThread:116186 [backend.py:_multiprocessing_setup():70] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-10-23 19:02:40,895 INFO    MainThread:116186 [backend.py:ensure_launched():135] starting backend process...
+2021-10-23 19:02:40,907 INFO    MainThread:116186 [backend.py:ensure_launched():139] started backend process with pid: 143396
+2021-10-23 19:02:40,908 INFO    MainThread:116186 [wandb_init.py:init():440] backend started and connected
+2021-10-23 19:02:40,954 INFO    MainThread:116186 [wandb_run.py:_label_probe_notebook():833] probe notebook
+2021-10-23 19:02:40,955 INFO    MainThread:116186 [wandb_init.py:init():499] updated telemetry
+2021-10-23 19:02:40,960 INFO    MainThread:116186 [wandb_init.py:init():522] communicating current version
+2021-10-23 19:02:42,295 INFO    MainThread:116186 [wandb_init.py:init():527] got version response upgrade_message: "wandb version 0.12.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2021-10-23 19:02:42,295 INFO    MainThread:116186 [wandb_init.py:init():535] communicating run to backend with 30 second timeout
+2021-10-23 19:02:42,827 INFO    MainThread:116186 [wandb_init.py:init():562] starting run threads in backend
+2021-10-23 19:02:47,832 INFO    MainThread:116186 [wandb_run.py:_console_start():1651] atexit reg
+2021-10-23 19:02:47,834 INFO    MainThread:116186 [wandb_run.py:_redirect():1525] redirect: SettingsConsole.WRAP
+2021-10-23 19:02:47,834 INFO    MainThread:116186 [wandb_run.py:_redirect():1562] Wrapping output streams.
+2021-10-23 19:02:47,835 INFO    MainThread:116186 [wandb_run.py:_redirect():1586] Redirects installed.
+2021-10-23 19:02:47,835 INFO    MainThread:116186 [wandb_init.py:init():587] run started, returning control to user process
+2021-10-23 19:02:57,033 INFO    MainThread:116186 [wandb_init.py:_pause_backend():270] pausing backend
+2021-10-23 19:02:57,034 INFO    MainThread:116186 [jupyter.py:save_ipynb():376] looking for notebook: 00.ipynb
+2021-10-23 19:02:57,649 INFO    MainThread:116186 [wandb_init.py:_pause_backend():274] saved code: <wandb.sdk.wandb_artifacts.Artifact object at 0x7ff551321f70>
+2021-10-23 19:03:21,405 INFO    MainThread:116186 [wandb_run.py:_atexit_cleanup():1621] got exitcode: 0
+2021-10-23 19:03:21,406 INFO    MainThread:116186 [wandb_run.py:_restore():1593] restore
+2021-10-23 19:03:22,390 INFO    MainThread:116186 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 1
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 157643
+  total_bytes: 157643
+}
+
+2021-10-23 19:03:22,965 INFO    MainThread:116186 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 1
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 157643
+  total_bytes: 157643
+}
+

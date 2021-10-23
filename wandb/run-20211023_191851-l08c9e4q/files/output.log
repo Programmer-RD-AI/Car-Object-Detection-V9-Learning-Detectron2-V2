@@ -1,0 +1,368 @@
+[32m[10/23 19:19:03 d2.engine.defaults]: [39mModel:
+GeneralizedRCNN(
+  (backbone): ResNet(
+    (stem): BasicStem(
+      (conv1): Conv2d(
+        3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False
+        (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+      )
+    )
+    (res2): Sequential(
+      (0): BottleneckBlock(
+        (shortcut): Conv2d(
+          64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv1): Conv2d(
+          64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+      )
+      (1): BottleneckBlock(
+        (conv1): Conv2d(
+          256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+      )
+      (2): BottleneckBlock(
+        (conv1): Conv2d(
+          256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=64, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+      )
+    )
+    (res3): Sequential(
+      (0): BottleneckBlock(
+        (shortcut): Conv2d(
+          256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv1): Conv2d(
+          256, 128, kernel_size=(1, 1), stride=(2, 2), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+      )
+      (1): BottleneckBlock(
+        (conv1): Conv2d(
+          512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+      )
+      (2): BottleneckBlock(
+        (conv1): Conv2d(
+          512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+      )
+      (3): BottleneckBlock(
+        (conv1): Conv2d(
+          512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=128, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+      )
+    )
+    (res4): Sequential(
+      (0): BottleneckBlock(
+        (shortcut): Conv2d(
+          512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+        (conv1): Conv2d(
+          512, 256, kernel_size=(1, 1), stride=(2, 2), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+      (1): BottleneckBlock(
+        (conv1): Conv2d(
+          1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+      (2): BottleneckBlock(
+        (conv1): Conv2d(
+          1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+      (3): BottleneckBlock(
+        (conv1): Conv2d(
+          1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+      (4): BottleneckBlock(
+        (conv1): Conv2d(
+          1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+      (5): BottleneckBlock(
+        (conv1): Conv2d(
+          1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=256, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=1024, eps=1e-05)
+        )
+      )
+    )
+  )
+  (proposal_generator): RPN(
+    (rpn_head): StandardRPNHead(
+      (conv): Conv2d(
+        1024, 1024, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)
+        (activation): ReLU()
+      )
+      (objectness_logits): Conv2d(1024, 15, kernel_size=(1, 1), stride=(1, 1))
+      (anchor_deltas): Conv2d(1024, 60, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (anchor_generator): DefaultAnchorGenerator(
+      (cell_anchors): BufferList()
+    )
+  )
+  (roi_heads): Res5ROIHeads(
+    (pooler): ROIPooler(
+      (level_poolers): ModuleList(
+        (0): ROIAlign(output_size=(14, 14), spatial_scale=0.0625, sampling_ratio=0, aligned=True)
+      )
+    )
+    (res5): Sequential(
+      (0): BottleneckBlock(
+        (shortcut): Conv2d(
+          1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False
+          (norm): FrozenBatchNorm2d(num_features=2048, eps=1e-05)
+        )
+        (conv1): Conv2d(
+          1024, 512, kernel_size=(1, 1), stride=(2, 2), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=2048, eps=1e-05)
+        )
+      )
+      (1): BottleneckBlock(
+        (conv1): Conv2d(
+          2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=2048, eps=1e-05)
+        )
+      )
+      (2): BottleneckBlock(
+        (conv1): Conv2d(
+          2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv2): Conv2d(
+          512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=512, eps=1e-05)
+        )
+        (conv3): Conv2d(
+          512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False
+          (norm): FrozenBatchNorm2d(num_features=2048, eps=1e-05)
+        )
+      )
+    )
+    (box_predictor): FastRCNNOutputLayers(
+      (cls_score): Linear(in_features=2048, out_features=2, bias=True)
+      (bbox_pred): Linear(in_features=2048, out_features=4, bias=True)
+    )
+  )
+)
+[32m[10/23 19:19:03 d2.data.build]: [39mRemoved 0 images with no usable annotations. 559 images left.
+[32m[10/23 19:19:03 d2.data.build]: [39mDistribution of instances among all 1 categories:
+[36m|  category  | #instances   |
+[36m|:----------:|:-------------|
+[36m|    Car     | 559          |
+[36m|            |              |
+[32m[10/23 19:19:03 d2.data.dataset_mapper]: [39m[DatasetMapper] Augmentations used in training: [ResizeShortestEdge(short_edge_length=(640, 672, 704, 736, 768, 800), max_size=1333, sample_style='choice'), RandomFlip()]
+[32m[10/23 19:19:03 d2.data.build]: [39mUsing training sampler TrainingSampler
+[32m[10/23 19:19:03 d2.data.common]: [39mSerializing 559 elements to byte tensors and concatenating them all ...
+[32m[10/23 19:19:03 d2.data.common]: [39mSerialized dataset takes 0.19 MiB
+2021-10-23 19:19:03.765228: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+Skip loading parameter 'roi_heads.box_predictor.cls_score.weight' to the model due to incompatible shapes: (81, 2048) in the checkpoint but (2, 2048) in the model! You might want to double check if this is expected.
+Skip loading parameter 'roi_heads.box_predictor.cls_score.bias' to the model due to incompatible shapes: (81,) in the checkpoint but (2,) in the model! You might want to double check if this is expected.
+Skip loading parameter 'roi_heads.box_predictor.bbox_pred.weight' to the model due to incompatible shapes: (320, 2048) in the checkpoint but (4, 2048) in the model! You might want to double check if this is expected.
+Skip loading parameter 'roi_heads.box_predictor.bbox_pred.bias' to the model due to incompatible shapes: (320,) in the checkpoint but (4,) in the model! You might want to double check if this is expected.
+Some model parameters or buffers are not found in the checkpoint:
+[34mroi_heads.box_predictor.bbox_pred.{bias, weight}
+[34mroi_heads.box_predictor.cls_score.{bias, weight}
+The checkpoint state_dict contains keys that are not used by the model:
+  [35mproposal_generator.anchor_generator.cell_anchors.0
+[32m[10/23 19:19:06 d2.engine.train_loop]: [39mStarting training from iteration 0
+[32m[10/23 19:19:13 d2.utils.events]: [39m eta: 0:02:47  iter: 19  total_loss: 1.207  loss_cls: 0.8102  loss_box_reg: 0.3969  loss_rpn_cls: 0.008226  loss_rpn_loc: 0.005646  time: 0.3429  data_time: 0.0171  lr: 9.7405e-06  max_mem: 2154M
+[32m[10/23 19:19:20 d2.utils.events]: [39m eta: 0:02:38  iter: 39  total_loss: 1.03  loss_cls: 0.629  loss_box_reg: 0.3941  loss_rpn_cls: 0.01168  loss_rpn_loc: 0.004826  time: 0.3395  data_time: 0.0026  lr: 1.9731e-05  max_mem: 2154M
+[32m[10/23 19:19:27 d2.utils.events]: [39m eta: 0:02:32  iter: 59  total_loss: 0.8465  loss_cls: 0.4042  loss_box_reg: 0.4499  loss_rpn_cls: 0.008274  loss_rpn_loc: 0.004561  time: 0.3408  data_time: 0.0026  lr: 2.972e-05  max_mem: 2154M
+[32m[10/23 19:19:34 d2.utils.events]: [39m eta: 0:02:25  iter: 79  total_loss: 0.6995  loss_cls: 0.2815  loss_box_reg: 0.4055  loss_rpn_cls: 0.00822  loss_rpn_loc: 0.004714  time: 0.3399  data_time: 0.0025  lr: 3.9711e-05  max_mem: 2154M
+[32m[10/23 19:19:40 d2.utils.events]: [39m eta: 0:02:18  iter: 99  total_loss: 0.6803  loss_cls: 0.2172  loss_box_reg: 0.4434  loss_rpn_cls: 0.01072  loss_rpn_loc: 0.005478  time: 0.3397  data_time: 0.0026  lr: 4.9701e-05  max_mem: 2154M
+[32m[10/23 19:19:47 d2.utils.events]: [39m eta: 0:02:11  iter: 119  total_loss: 0.6073  loss_cls: 0.1743  loss_box_reg: 0.4319  loss_rpn_cls: 0.00865  loss_rpn_loc: 0.003883  time: 0.3401  data_time: 0.0025  lr: 5.9691e-05  max_mem: 2154M
+[32m[10/23 19:19:54 d2.utils.events]: [39m eta: 0:02:04  iter: 139  total_loss: 0.6398  loss_cls: 0.1649  loss_box_reg: 0.4787  loss_rpn_cls: 0.006746  loss_rpn_loc: 0.004332  time: 0.3402  data_time: 0.0025  lr: 6.9681e-05  max_mem: 2154M
+[32m[10/23 19:20:01 d2.utils.events]: [39m eta: 0:01:57  iter: 159  total_loss: 0.6139  loss_cls: 0.1338  loss_box_reg: 0.4825  loss_rpn_cls: 0.006531  loss_rpn_loc: 0.005633  time: 0.3397  data_time: 0.0028  lr: 7.9671e-05  max_mem: 2154M
+[32m[10/23 19:20:08 d2.utils.events]: [39m eta: 0:01:50  iter: 179  total_loss: 0.5298  loss_cls: 0.111  loss_box_reg: 0.4038  loss_rpn_cls: 0.007088  loss_rpn_loc: 0.0039  time: 0.3401  data_time: 0.0027  lr: 8.966e-05  max_mem: 2154M
+[32m[10/23 19:20:14 d2.utils.events]: [39m eta: 0:01:43  iter: 199  total_loss: 0.5418  loss_cls: 0.1034  loss_box_reg: 0.4183  loss_rpn_cls: 0.009323  loss_rpn_loc: 0.003703  time: 0.3401  data_time: 0.0026  lr: 9.9651e-05  max_mem: 2154M
+[32m[10/23 19:20:21 d2.utils.events]: [39m eta: 0:01:36  iter: 219  total_loss: 0.5284  loss_cls: 0.09296  loss_box_reg: 0.4228  loss_rpn_cls: 0.006505  loss_rpn_loc: 0.003588  time: 0.3404  data_time: 0.0026  lr: 0.00010964  max_mem: 2154M
+[32m[10/23 19:20:28 d2.utils.events]: [39m eta: 0:01:29  iter: 239  total_loss: 0.5257  loss_cls: 0.07752  loss_box_reg: 0.4365  loss_rpn_cls: 0.004551  loss_rpn_loc: 0.00312  time: 0.3404  data_time: 0.0026  lr: 0.00011963  max_mem: 2154M
+[32m[10/23 19:20:35 d2.utils.events]: [39m eta: 0:01:22  iter: 259  total_loss: 0.4793  loss_cls: 0.07307  loss_box_reg: 0.3791  loss_rpn_cls: 0.005041  loss_rpn_loc: 0.002641  time: 0.3409  data_time: 0.0024  lr: 0.00012962  max_mem: 2154M
+[32m[10/23 19:20:42 d2.utils.events]: [39m eta: 0:01:16  iter: 279  total_loss: 0.4518  loss_cls: 0.07665  loss_box_reg: 0.349  loss_rpn_cls: 0.008927  loss_rpn_loc: 0.0036  time: 0.3411  data_time: 0.0025  lr: 0.00013961  max_mem: 2154M
+[32m[10/23 19:20:49 d2.utils.events]: [39m eta: 0:01:09  iter: 299  total_loss: 0.4331  loss_cls: 0.0797  loss_box_reg: 0.3612  loss_rpn_cls: 0.004415  loss_rpn_loc: 0.00302  time: 0.3412  data_time: 0.0025  lr: 0.0001496  max_mem: 2154M
+[32m[10/23 19:20:56 d2.utils.events]: [39m eta: 0:01:02  iter: 319  total_loss: 0.3754  loss_cls: 0.05503  loss_box_reg: 0.2968  loss_rpn_cls: 0.006762  loss_rpn_loc: 0.003268  time: 0.3414  data_time: 0.0026  lr: 0.00015959  max_mem: 2154M
+[32m[10/23 19:21:03 d2.utils.events]: [39m eta: 0:00:55  iter: 339  total_loss: 0.3428  loss_cls: 0.053  loss_box_reg: 0.2838  loss_rpn_cls: 0.002553  loss_rpn_loc: 0.002438  time: 0.3416  data_time: 0.0025  lr: 0.00016958  max_mem: 2154M
+[32m[10/23 19:21:10 d2.utils.events]: [39m eta: 0:00:48  iter: 359  total_loss: 0.3285  loss_cls: 0.05684  loss_box_reg: 0.2496  loss_rpn_cls: 0.003366  loss_rpn_loc: 0.003042  time: 0.3419  data_time: 0.0025  lr: 0.00017957  max_mem: 2154M
+[32m[10/23 19:21:16 d2.utils.events]: [39m eta: 0:00:41  iter: 379  total_loss: 0.3071  loss_cls: 0.0571  loss_box_reg: 0.2404  loss_rpn_cls: 0.006155  loss_rpn_loc: 0.005404  time: 0.3421  data_time: 0.0025  lr: 0.00018956  max_mem: 2154M
+[32m[10/23 19:21:23 d2.utils.events]: [39m eta: 0:00:34  iter: 399  total_loss: 0.2673  loss_cls: 0.05783  loss_box_reg: 0.2023  loss_rpn_cls: 0.005761  loss_rpn_loc: 0.003067  time: 0.3421  data_time: 0.0027  lr: 0.00019955  max_mem: 2154M
+[32m[10/23 19:21:30 d2.utils.events]: [39m eta: 0:00:27  iter: 419  total_loss: 0.2581  loss_cls: 0.06425  loss_box_reg: 0.1699  loss_rpn_cls: 0.002153  loss_rpn_loc: 0.002619  time: 0.3424  data_time: 0.0025  lr: 0.00020954  max_mem: 2154M
+[32m[10/23 19:21:37 d2.utils.events]: [39m eta: 0:00:20  iter: 439  total_loss: 0.2376  loss_cls: 0.04701  loss_box_reg: 0.183  loss_rpn_cls: 0.003014  loss_rpn_loc: 0.003479  time: 0.3425  data_time: 0.0027  lr: 0.00021953  max_mem: 2154M
+[32m[10/23 19:21:44 d2.utils.events]: [39m eta: 0:00:13  iter: 459  total_loss: 0.2431  loss_cls: 0.0583  loss_box_reg: 0.1863  loss_rpn_cls: 0.003383  loss_rpn_loc: 0.003247  time: 0.3424  data_time: 0.0025  lr: 0.00022952  max_mem: 2154M
+[32m[10/23 19:21:51 d2.utils.events]: [39m eta: 0:00:06  iter: 479  total_loss: 0.2945  loss_cls: 0.05631  loss_box_reg: 0.2129  loss_rpn_cls: 0.003774  loss_rpn_loc: 0.002856  time: 0.3425  data_time: 0.0025  lr: 0.00023951  max_mem: 2154M
+[32m[10/23 19:21:58 d2.utils.events]: [39m eta: 0:00:00  iter: 499  total_loss: 0.2371  loss_cls: 0.05108  loss_box_reg: 0.1712  loss_rpn_cls: 0.002329  loss_rpn_loc: 0.002141  time: 0.3425  data_time: 0.0026  lr: 0.0002495  max_mem: 2154M
+[32m[10/23 19:21:58 d2.engine.hooks]: [39mOverall training speed: 498 iterations in 0:02:50 (0.3425 s / it)
+[32m[10/23 19:21:58 d2.engine.hooks]: [39mTotal training time: 0:02:51 (0:00:00 on hooks)
+Skip loading parameter 'roi_heads.box_predictor.cls_score.weight' to the model due to incompatible shapes: (81, 2048) in the checkpoint but (2, 2048) in the model! You might want to double check if this is expected.
+Skip loading parameter 'roi_heads.box_predictor.cls_score.bias' to the model due to incompatible shapes: (81,) in the checkpoint but (2,) in the model! You might want to double check if this is expected.
+Skip loading parameter 'roi_heads.box_predictor.bbox_pred.weight' to the model due to incompatible shapes: (320, 2048) in the checkpoint but (4, 2048) in the model! You might want to double check if this is expected.
+Skip loading parameter 'roi_heads.box_predictor.bbox_pred.bias' to the model due to incompatible shapes: (320,) in the checkpoint but (4,) in the model! You might want to double check if this is expected.
+Some model parameters or buffers are not found in the checkpoint:
+[34mroi_heads.box_predictor.bbox_pred.{bias, weight}
+[34mroi_heads.box_predictor.cls_score.{bias, weight}
+The checkpoint state_dict contains keys that are not used by the model:
+  [35mproposal_generator.anchor_generator.cell_anchors.0
+[32m[10/23 19:21:59 d2.evaluation.coco_evaluation]: [39m'data' is not registered by `register_coco_instances`. Therefore trying to convert it to COCO format ...
+[31m[5mWARNING[39m[25m [32m[10/23 19:21:59 d2.data.datasets.coco]: [39mUsing previously cached COCO format annotations at './output/data_coco_format.json'. You need to clear the cache file if your dataset has been modified.
+[32m[10/23 19:21:59 d2.data.dataset_mapper]: [39m[DatasetMapper] Augmentations used in inference: [ResizeShortestEdge(short_edge_length=(800, 800), max_size=1333, sample_style='choice')]
+[32m[10/23 19:21:59 d2.data.common]: [39mSerializing 559 elements to byte tensors and concatenating them all ...
+[32m[10/23 19:21:59 d2.data.common]: [39mSerialized dataset takes 0.19 MiB
+[32m[10/23 19:21:59 d2.evaluation.evaluator]: [39mStart inference on 559 batches
+[32m[10/23 19:22:01 d2.evaluation.evaluator]: [39mInference done 11/559. Dataloading: 0.0007 s/iter. Inference: 0.2262 s/iter. Eval: 0.0002 s/iter. Total: 0.2272 s/iter. ETA=0:02:04
+[32m[10/23 19:22:07 d2.evaluation.evaluator]: [39mInference done 34/559. Dataloading: 0.0009 s/iter. Inference: 0.2258 s/iter. Eval: 0.0002 s/iter. Total: 0.2270 s/iter. ETA=0:01:59
+[32m[10/23 19:22:12 d2.evaluation.evaluator]: [39mInference done 56/559. Dataloading: 0.0010 s/iter. Inference: 0.2268 s/iter. Eval: 0.0002 s/iter. Total: 0.2280 s/iter. ETA=0:01:54
+[32m[10/23 19:22:17 d2.evaluation.evaluator]: [39mInference done 78/559. Dataloading: 0.0010 s/iter. Inference: 0.2274 s/iter. Eval: 0.0002 s/iter. Total: 0.2286 s/iter. ETA=0:01:49
+[32m[10/23 19:22:22 d2.evaluation.evaluator]: [39mInference done 100/559. Dataloading: 0.0010 s/iter. Inference: 0.2283 s/iter. Eval: 0.0002 s/iter. Total: 0.2295 s/iter. ETA=0:01:45
+[32m[10/23 19:22:27 d2.evaluation.evaluator]: [39mInference done 122/559. Dataloading: 0.0010 s/iter. Inference: 0.2280 s/iter. Eval: 0.0002 s/iter. Total: 0.2292 s/iter. ETA=0:01:40
+[32m[10/23 19:22:32 d2.evaluation.evaluator]: [39mInference done 145/559. Dataloading: 0.0010 s/iter. Inference: 0.2274 s/iter. Eval: 0.0002 s/iter. Total: 0.2287 s/iter. ETA=0:01:34
+[32m[10/23 19:22:37 d2.evaluation.evaluator]: [39mInference done 168/559. Dataloading: 0.0010 s/iter. Inference: 0.2271 s/iter. Eval: 0.0002 s/iter. Total: 0.2283 s/iter. ETA=0:01:29
+[32m[10/23 19:22:42 d2.evaluation.evaluator]: [39mInference done 192/559. Dataloading: 0.0010 s/iter. Inference: 0.2253 s/iter. Eval: 0.0002 s/iter. Total: 0.2266 s/iter. ETA=0:01:23
+[32m[10/23 19:22:47 d2.evaluation.evaluator]: [39mInference done 215/559. Dataloading: 0.0010 s/iter. Inference: 0.2248 s/iter. Eval: 0.0002 s/iter. Total: 0.2261 s/iter. ETA=0:01:17
+[32m[10/23 19:22:53 d2.evaluation.evaluator]: [39mInference done 237/559. Dataloading: 0.0010 s/iter. Inference: 0.2251 s/iter. Eval: 0.0002 s/iter. Total: 0.2263 s/iter. ETA=0:01:12
+[32m[10/23 19:22:58 d2.evaluation.evaluator]: [39mInference done 260/559. Dataloading: 0.0010 s/iter. Inference: 0.2249 s/iter. Eval: 0.0002 s/iter. Total: 0.2262 s/iter. ETA=0:01:07
+[32m[10/23 19:23:03 d2.evaluation.evaluator]: [39mInference done 283/559. Dataloading: 0.0010 s/iter. Inference: 0.2243 s/iter. Eval: 0.0002 s/iter. Total: 0.2256 s/iter. ETA=0:01:02
+[32m[10/23 19:23:08 d2.evaluation.evaluator]: [39mInference done 299/559. Dataloading: 0.0011 s/iter. Inference: 0.2305 s/iter. Eval: 0.0004 s/iter. Total: 0.2321 s/iter. ETA=0:01:00
+[32m[10/23 19:23:13 d2.evaluation.evaluator]: [39mInference done 302/559. Dataloading: 0.0012 s/iter. Inference: 0.2451 s/iter. Eval: 0.0005 s/iter. Total: 0.2468 s/iter. ETA=0:01:03
+[32m[10/23 19:23:20 d2.evaluation.evaluator]: [39mInference done 317/559. Dataloading: 0.0013 s/iter. Inference: 0.2546 s/iter. Eval: 0.0006 s/iter. Total: 0.2567 s/iter. ETA=0:01:02
+[32m[10/23 19:23:25 d2.evaluation.evaluator]: [39mInference done 323/559. Dataloading: 0.0016 s/iter. Inference: 0.2586 s/iter. Eval: 0.0072 s/iter. Total: 0.2677 s/iter. ETA=0:01:03
+[32m[10/23 19:23:35 d2.evaluation.evaluator]: [39mInference done 337/559. Dataloading: 0.0019 s/iter. Inference: 0.2764 s/iter. Eval: 0.0071 s/iter. Total: 0.2856 s/iter. ETA=0:01:03
+[32m[10/23 19:23:44 d2.evaluation.evaluator]: [39mInference done 340/559. Dataloading: 0.0021 s/iter. Inference: 0.3023 s/iter. Eval: 0.0071 s/iter. Total: 0.3118 s/iter. ETA=0:01:08
+[32m[10/23 19:23:53 d2.evaluation.evaluator]: [39mInference done 342/559. Dataloading: 0.0022 s/iter. Inference: 0.3255 s/iter. Eval: 0.0071 s/iter. Total: 0.3352 s/iter. ETA=0:01:12
+[32m[10/23 19:23:58 d2.evaluation.evaluator]: [39mInference done 363/559. Dataloading: 0.0022 s/iter. Inference: 0.3203 s/iter. Eval: 0.0067 s/iter. Total: 0.3297 s/iter. ETA=0:01:04
+[32m[10/23 19:24:03 d2.evaluation.evaluator]: [39mInference done 385/559. Dataloading: 0.0021 s/iter. Inference: 0.3153 s/iter. Eval: 0.0064 s/iter. Total: 0.3242 s/iter. ETA=0:00:56
